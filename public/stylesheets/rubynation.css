@@ -1,0 +1,176 @@
+@import url(header-footer.css);
+@import url(sponsors.css);
+@import url(tables.css);
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  background-color: #000000;
+}
+
+iframe {
+  width: 99%;
+}
+
+a:link { color: #336699; }
+a:visited { color: #6666cc; }
+
+#page { width: 1000px; margin: 0 auto; padding: 0; background-color: #FFFFFF; vertical-align: top;}
+
+#column1-container { margin: 0; padding: 0; background-color: #000000; width: 100%;}
+#column1 { width: 836px; margin: 0; padding: 0; background-color: #FFFFFF;}
+#column2 { position: absolute; top: 115px; margin: 0 0 0 836px; height: 100%; background-color: #000000;}
+
+#content {
+  /* min-width: 15em; */
+  margin: 10px 10px 0 10px;
+  padding: 0px;
+  background-color: #FFFFFF;
+}
+
+.section {
+  background-color: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 20px;
+  position: relative;
+  /* z-index: auto; */
+}
+
+.section p, .section li, .section ul {
+  max-width: 80em;
+  margin: 1em;
+  padding: 0px;
+}
+.section ul{
+  margin: 0px 0px 0px 2em;
+}
+.section li {
+  position: relative;
+  left: 1em;
+  margin: 0px 2em 0.8em;
+  padding: 0px;
+}
+.section ul.submission-package li { margin: 0px; }
+.section ul.people li { list-style: none; }
+.section img {
+  display: block;
+  margin: 1em;
+  padding: 0px;
+}
+
+.quoted-text {
+  font-style: italic
+}
+
+div.sponsor-bio {
+  margin: 1em 0px;
+  padding: 0px;
+  min-height: 5em;
+  height: auto !important; /* Win IE Hack for min-height */
+  height: 5em;             /* Win IE Hack for min-height */
+  clear: left;
+}
+div.sponsor-bio p {
+  margin: 0.5em 2em 0px 150px;
+  padding: 0px;
+}
+div.sponsor-bio img {
+  margin: 0.25em 1em;
+  padding: 0px;
+  float: left;
+}
+
+img.person-pic {
+  float: left;
+  margin: 0px 1em;
+  padding: 0px;
+}
+
+.sample-code {
+  width: 90%;
+  max-width: 55em;
+  height: 4em;
+  margin: 1em;
+  padding: 0px;
+}
+
+/* For JRoller blog information sucked into page */
+.rss_box { max-width: 40em; }
+
+h1 {
+  margin: 0px;
+  padding: 3px 14px 3px 0;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #7899BB;
+  color: #d62030;
+  font-size: 1.3em;
+  font-family: "Gill Sans", "Lucida Sans Unicode", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  padding: 0 0.2em 0.2em 0;
+  margin-top: 0;
+  border-bottom: 1px solid #7899BB;
+  color: #d62030;
+  background-color: #FFFFFF;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+h3 {
+  padding: 0.2em 0.2em 0.2em 1.5em;
+  color: #990000;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.post_date {
+	color: #990000;
+	font-size: .8em;
+}
+
+.comment {
+  text-align: center;
+  color: #515151;
+  font-size: 0.8em;
+}
+
+.address {
+  white-space: pre;
+  font-family: Courier, serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.postcard {
+  border: 1px solid black;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#cit-map {
+  margin: 0px auto 10px 2em;
+  border: 1px solid black;
+}
+
+p.topic {
+  margin: 1em 1em 0 1em;
+}
+
+p.speaker {
+  font-style: italic;
+  margin: 0 1em 1em 1em;
+}
+
+p.notes {
+  font-style: italic;
+}

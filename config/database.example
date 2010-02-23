@@ -1,0 +1,28 @@
+# To use this file with your MySQL database you first must create the
+# appropriate database:
+#   mysqld_safe &
+#   mysql -uroot -p
+#   create database rubynation_dev
+#   create user 'rubynation'@'localhost' identified by 'rubynation';
+#   grant select,insert,update,delete,create,drop,alter,index,lock tables
+#     on rubynation_dev.* to 'rubynation'@'localhost';
+common: &comm
+  adapter: mysql
+  username: rubynation
+  password: rubynation
+  host: localhost
+  # If needed, socket can be found by running:  mysql_config --socket
+  # socket: /tmp/mysql.sock
+
+# The actual databases for the different environments
+development:
+  database: rubynation_dev
+  <<: *comm
+
+test:
+  database: rubynation_test
+  <<: *comm
+
+production:
+  database: rubynation_production
+  <<: *comm

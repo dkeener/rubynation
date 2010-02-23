@@ -1,0 +1,426 @@
+<div id="content">
+
+<!--
+  <p>
+    See our
+    <a href="images/program/ruby09_schedule.pdf">program<a>
+    for agenda details and speaker information.
+  </p>
+  -->
+
+  <div class="section">
+    <h1>RubyNation Agenda</h1>
+
+    <p>The agenda for RubyNation 2010 has not been finalized (although the speakers
+	have just been chosen). The 2010 agenda will be finalized sometime in February.</p>
+	
+	<p>Check out
+	our <a href="/archive">Archive</a> if you'd like to see learn about the
+	types of presentations we've had during previous conferences.</p>
+<!--
+    <h3>Training Day: Thursday, June 11</h3>
+    <table class="day">
+      <tr>
+        <td class="time">9:00 AM - 5:00 PM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="topic"><a href="http://www.codesherpas.com/training">Real World Ruby on Rails Deployments</a></p>
+          <p class="speaker">David Bock</p>
+        </td>
+      </tr>
+    </table>
+
+    <h3>Day 1: Friday, June 12</h3>
+    <table class="day">
+      <tr>
+        <td class="time">8:00 AM - 9:00 AM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Registration and Contenintal Breakfast</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">9:00 AM - 9:15 AM</td>
+        <td class="both_tracks" colspan="2">
+          <p class="notes">Welcome and Opening Remarks</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">9:15 AM - 10:15 AM</td>
+        <td colspan="2">
+          <p class="topic">
+             <%= link_to "Preparing for Ruby 1.9", :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "david_a_black" %>
+          </p>
+          <p class="speaker">David A. Black</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">10:15 AM - 10:30 AM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Break</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">10:30 AM - 11:15 AM</td>
+        <td>
+          <p class="topic">
+             <%= link_to "Design Patterns In Dynamic Languages", :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "russ_olsen" %>
+          </p>
+          <p class="speaker">Russ Olsen</p>
+        </td>
+        <td>
+          <p class="topic">
+             <%= link_to "Creating A World-Class RESTful Web Services API", :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "david_keener" %>
+          </p>
+          <p class="speaker">David Keener</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">11:15 AM - 11:30 AM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Break</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">11:30 AM - 12:15 PM</td>
+        <td>
+          <p class="topic">
+             <%= link_to "&ldquo;Comics&rdquo; Is Hard: Domain Modeling Challenges", :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "david_keener" %>
+          </p>
+          <p class="speaker">Ben Scofield</p>
+        </td>
+        <td>
+          <p class="topic">
+             <%= link_to "Bringing Content Management to Rails with BrowserCMS", :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "paul_barry" %>
+          </p>
+          <p class="speaker">Paul Barry</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">12:15 PM - 1:30 PM</td>
+        <td class="speaker">
+          <p class="notes">Lunch Buffet</p>
+        </td>
+        <td>
+          <p class="topic">
+             <%= link_to "Ruby Marketplace (Ruby Jobs!)", :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "ruby_marketplace" %>
+          </p>
+          <p class="speaker">Ruby Employers and You!</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">1:30 PM - 2:15 PM</td>
+        <td>
+          <p class="topic">
+             <%= link_to "Reia: The Next Big Thing?", :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "hal_fulton" %>
+          </p>
+          <p class="speaker">Hal Fulton</p>
+        </td>
+        <td>
+          <p class="topic">
+             <%= link_to "Fast and Scalable Front/Back-end Services using Ruby, Rails and XMPP", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "pradeep_elankumaran" %>
+          </p>
+          <p class="speaker">Pradeep Elankumaran</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">2:15 PM - 3:00 PM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Break</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">3:00 PM - 3:45 PM</td>
+        <td colspan='2'>
+          <p class="topic">
+             <%= link_to "Lightning Talks", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "lightning_talks" %>
+          </p>
+          <p class="speaker">Multiple Presenters</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">3:45 PM - 4:15 PM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Coffee/Snack</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">4:15 PM - 5:00 PM</td>
+        <td>
+          <p class="topic">
+             <%= link_to "&ldquo;Handling&rdquo; Legacy Databases with Rails and DataMapper", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "tony_pitale" %>
+          </p>
+          <p class="speaker">Tony Pitale</p>
+        </td>
+        <td>
+          <p class="topic">
+             <%= link_to "Code Stinkers Anonymous: Learning To Write Better Code And Love Refactoring", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "mark_cornick" %>
+          </p>
+          <p class="speaker">Mark Cornick</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">5:00 PM - 5:15 PM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Break</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">5:15 PM - 6:00 PM</td>
+        <td colspan='2'>
+          <p class="topic">
+             <%= link_to "The Passionate Programmer", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "chad_fowler" %>
+          </p>
+          <p class="speaker">Chad Fowler</p>
+        </td>
+      </tr>
+
+
+    </table>
+
+    <p class="comment">* &mdash; Schedule subject to change without notice.</p>
+
+    <h3>Day 2: Saturday, June 13</h3>
+    <table class="day">
+      <tr>
+        <td class="time">8:00 AM - 9:00 AM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Contenintal Breakfast</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">9:00 AM - 9:15 AM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Welcome and Opening Remarks</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">9:15 AM - 10:15 AM</td>
+        <td colspan='2'>
+          <p class="topic">
+             <%= link_to "Be Careful, Your Java is Showing", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "joe_obrien" %>
+          </p>
+          <p class="speaker">Joe O'Brien</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">10:15 AM - 10:30 AM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Break</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">10:30 AM - 11:15 AM</td>
+        <td>
+          <p class="topic">
+             <%= link_to "From Paralysis to Static Analysis: A Ruby 1.9 Case Study on Upgrading Rcov", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "aaron_bedra" %>
+          </p>
+          <p class="speaker">Aaron Bedra</p>
+        </td>
+        <td>
+          <p class="topic">
+             Modeling Workflow in Ruby on Rails
+          </p>
+          <p class="speaker">David Bock</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">11:15 AM - 11:30 AM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Break</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">11:30 AM - 12:15 PM</td>
+        <td>
+          <p class="topic">
+             <%= link_to "Building Native Mobile Apps in Ruby", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "adam_blum" %>
+          </p>
+          <p class="speaker">Adam Blum</p>
+        </td>
+        <td>
+          <p class="topic">
+             <%= link_to "Optimizing Perceived Performance", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "david_eisinger" %>
+          </p>
+          <p class="speaker">David Eisinger</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">12:15 PM - 1:30 PM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Lunch Buffet</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">1:30 PM - 2:15 PM</td>
+        <td colspan='2'>
+          <p class="topic">
+             <%= link_to "From Rails to Rack: Making Rails 3 a Better Ruby Citizen", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "yehuda_katz" %>
+          </p>
+          <p class="speaker">Yehuda Katz</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">2:15 PM - 3:00 PM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Break</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">3:00 PM - 3:45 PM</td>
+        <td colspan='2'>
+          <p class="topic">
+             <%= link_to "Lightning Talks", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "lightning_talks" %>
+          </p>
+          <p class="speaker">Multiple Presenters</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">3:45 PM - 4:15 PM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Coffee/Snack</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">4:15 PM - 5:00 PM</td>
+        <td colspan='2'>
+          <p class="topic">
+             <%= link_to "Requires SEO; acts_up", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "bruce_tate" %>
+          </p>
+          <p class="speaker">Bruce Tate</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">5:00 PM - 5:15 PM</td>
+        <td class="both_tracks" colspan='2'>
+          <p class="notes">Break</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="time">5:15 PM - 6:00 PM</td>
+        <td>
+          <p class="topic">
+             <%= link_to "Herding Tigers - Software Development and the Art of War", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "danny_philpott" %>
+          </p>
+          <p class="speaker">Danny Philpott</p>
+        </td>
+        <td>
+          <p class="topic">
+             <%= link_to "Distributed Computing with Ruby and TupleSpaces", 
+                    :controller => "speakers", 
+                    :action => "index", 
+                    :anchor => "luc_castera" %>
+          </p>
+          <p class="speaker">Luc Castera</p>
+        </td>
+      </tr>
+
+
+    </table>
+
+    <p class="comment">* &mdash; Schedule subject to change without notice.</p>
+	
+	-->
+    <p>The RubyNation Conference is a two-day technical conference focused on
+        Ruby, Rails and other Ruby-related technical subjects. Speakers will
+        include a mix of celebrity Ruby professionals and accomplished local
+        speakers.</p>
+
+    <p>Keynotes will be 60-minute presentations, while all other sessions will
+        be 45 minutes. We will have even more great speakers than last year's 
+		conference because, RubyNation 2010 will feature a combination of
+        single and dual track format. Additionally, one session each day will be devoted 
+		to Lightning Talks, which will consist of ad hoc speakers covering 
+		brief, how-to topics.
+        Go to the <%= link_to "Speakers", :controller => "speakers" %> page to
+        find out more about our scheduled presenters.
+    </p>
+
+    <p>All of this adds up to two great days of Ruby topics!</p>
+
+    <!-- <p>Take your skills to the next level. Come join us on
+        <%= conference_date true -%> 
+        for the 2009 RubyNation Conference.</p> -->
+
+  </div>
+
+</div>

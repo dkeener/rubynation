@@ -1,0 +1,42 @@
+<!--
+<%# RubyNation.org key for Google maps see
+http://www.google.com/maps/api_signup?url=http%3A%2F%2Fwww.rubynation.org%2F %>
+<% rn_key = 'ABQIAAAACQOcYdA4KvsHl590ZPoGihSNGtAv1Hev9gk0yAL9vKDpydtWphQffx8gR9elAOqbJjxJ51FFF7mkNA' %>
+
+<!== Google Map script ==>
+<script type="text/javascript"
+    src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=<%= rn_key -%>">
+</script>
+<script type="text/javascript">
+  //<![CDATA[
+  function load() {
+    cti_description='<div style="font-size:0.8em;">\
+        <b>RubyNation Conference 2008<\/b><br \/>\
+        CIT Complex<br \/>\
+        2214 Rock Hill Road<br \/>\
+        Herndon, Virginia 20170<\/div>';
+    cti_lat = 38.963644; // 38°57'49.12"N
+    cti_long = -77.420031; // 77°25'12.11"W
+    if (GBrowserIsCompatible()) {
+      var map = new GMap2(document.getElementById("cit-map"));
+      map.setCenter(new GLatLng(cti_lat, cti_long), 13);
+      map.addControl(new GMapTypeControl());
+      map.addControl(new GSmallMapControl());
+      function addStoreInRegion(html, longitude, latitude, showinfo) {
+        var point; var marker; var html;
+        point=new GPoint(longitude, latitude);
+        marker=new GMarker(point);
+        GEvent.addListener(marker, "click",
+          function() {
+            marker.openInfoWindowHtml(html);
+          });
+        map.addOverlay(marker);
+        if (showinfo) { marker.openInfoWindowHtml(html); }
+      }
+      addStoreInRegion(cti_description, cti_long, cti_lat, false);
+    }
+  }
+  //]]>
+</script> <!== end Google Map script ==>
+
+-->

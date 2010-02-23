@@ -1,0 +1,51 @@
+#sponsors {
+  float:  right;
+}
+
+#sponsors div.conference,
+#sponsors div.premium,
+#sponsors div.standard,
+#sponsors div.contributor {
+  margin: 14px 5px 10px 10px;
+  background-color: #ffffff;
+  border-bottom: 1.5em solid #515151;
+  text-align:center;
+  font-size: 90%;
+}
+
+#sponsors div.conference div,
+#sponsors div.premium div,
+#sponsors div.standard div,
+#sponsors div.contributor div {
+  width: 130px;
+  margin: 0px;
+  padding: 0px 10px;
+  border-bottom: 5px solid #7899BB;
+}
+
+#sponsors .sponsor-text {
+  font-style: italic
+}
+
+#sponsors p {
+  margin: 1em;
+  padding: 5px;
+  color: #515151;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#sponsors .sponsor {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  padding: 0px 0px 1em;
+}
+
+.sponsor img {
+  border: 1px solid white;
+}
+
+.sponsor img:hover {
+  border: 1px solid #ff3333;
+}

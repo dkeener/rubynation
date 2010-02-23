@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.- Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="httpL//www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+    <% if @defined_print_style -%>
+      <%= stylesheet_link_tag 'rubynation', :media => 'screen' %>
+      <%= stylesheet_link_tag @defined_print_style, :media => 'print' %>
+    <% else -%>
+      <%= stylesheet_link_tag 'rubynation', :media => 'all' %>
+    <% end -%>
+    <%= javascript_include_tag 'rubynation' %>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ?
+          "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost +
+          "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-979826-4");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script> <!-- end Google Analytics -->
+
+    <title>RubyNation / <%= conference_date -%> / <%= conference_location %></title>
+  </head>
+
+  <body <%= @onload_target if @onload_target -%>>
+  	<div id="page">
+      <div id="header">
+        <a href="/"></a>
+	    <div id="when">
+          <h1><%= conference_date -%><br />
+	      <%= conference_location %></h1>
+	    </div>
+        <ul id="menu">
+          <li><%= link_to_unless_current "Register", :controller => "registration" %></li>
+          <li><%= link_to_unless_current "Speakers", :controller => "speakers" %></li>
+          <li><%= link_to_unless_current "Agenda", :controller => "agenda" %></li>
+          <li><%= link_to_unless_current "Sponsors", :controller => "sponsors" %></li>
+          <li><%= link_to_unless_current "Travel&nbsp;&amp;&nbsp;Venue", :controller => "venue" %></li>
+          <li><%= link_to_unless_current "Badges", :controller => "banners" %></li>
+          <li><%= link_to_unless_current "Community", :controller => "organizers" %></li>
+          <li><%= link_to_unless_current "About", :controller => "about" %></li>
+          <li><%= link_to_unless_current "Home", :controller => "home" %></li>
+        </ul>
+	  </div>
+	  <div id="column1-container">
+        <div id="column1">
+          <%= yield %>
+	    </div>
+	  </div>
+	  <div id="column2">
+        <%= render :partial => 'layouts/sponsors' %>
+	  </div>
+      <div id="footer">Copyright 2008 - 2010 RubyNation Inc. All rights reserved.</div>
+	</div>
+  </body>
+
+</html>

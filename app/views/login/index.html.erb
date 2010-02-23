@@ -1,0 +1,38 @@
+<div id="content">
+
+  <div class="section">
+    <h2>Login</h2>
+
+    <p>Login to the RubyNation web site. For organizers only.</p>
+
+    <% if flash[:notice] %><div class="notice"><%= flash[:notice] %></div><% end %>
+
+    <div align=center>
+       <table width="50%" style="margin: 0px 1em; border: 0 ridge white;">
+       <tr>
+         <td>&nbsp;<br />
+
+           <% form_tag do %>
+		     <div align="center">
+               <table with="300px" style="margin: 0px 1em; border: 0 ridge white;">
+               <tr>
+                 <td align=right valign=middle class=form_label><label for="name">Login&nbsp;Name:</label></td>
+                 <td><%= text_field_tag :login_name, params[:login_name], :style => "width:120px;height:15px;font-size:9px;font-family:Tahoma; background-color:EADAC4 " %></td>
+               </tr>
+               <tr>
+                 <td align=right valign=middle class=form_label><label for="name">Password:</label></td>
+                 <td><%= password_field_tag :password, params[:password], :style => "width:120px;height:15px;font-size:9px;font-family:Tahoma; background-color:EADAC4 " %></td>
+               </tr>
+               </table>
+
+               <p><%= image_submit_tag "buttons/button_login.gif" %></p>
+             </div>
+
+           <% end %>
+         </td>
+       </tr>
+	   </table>
+     </div>
+
+  </div>
+</div>

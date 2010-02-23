@@ -1,0 +1,68 @@
+#sponsors {
+  /* float:  right; */
+  background-color: #000000;
+}
+
+#sponsors p {text-align: center;}
+#sponsors p.sponsor-list { color: #7899BB;}
+
+.sponsor-header { 
+  color: #FFFFFF; 
+  background-color: #777777;
+  font-size: 0.9em;
+  font-weight: bold;
+  border: 2px solid #777777;
+}
+
+#sponsors div.diamond,
+#sponsors div.platinum,
+#sponsors div.gold,
+#sponsors div.silver,
+#sponsors div.media,
+#sponsors div.contributor {
+  margin: 0 0 0 10px;
+  background-color: #ffffff;
+  /* border: .1em solid #515151; */
+  /* border-bottom: 1.5em solid #515151; */
+  border-top: 5px solid #7899BB;
+  text-align:center;
+  font-size: 90%;
+}
+
+#sponsors div.diamond div,
+#sponsors div.platinum div,
+#sponsors div.gold div,
+#sponsors div.silver div,
+#sponsors div.media div {
+  width: 130px;
+  margin: 0px;
+  padding: 0 10px 0 10px;
+  /* border-top: 5px solid #7899BB; */
+}
+
+#sponsors .sponsor-text {
+  font-style: italic
+}
+
+#sponsors p {
+  margin: 0.5em;
+  color: #515151;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#sponsors .sponsor {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  padding: 0px 0px 1em 0px;
+}
+
+.sponsor img {
+  margin-top: 5px;
+  border: 1px solid white;
+}
+
+.sponsor img:hover {
+  /*border: 1px solid #ff3333;*/
+}

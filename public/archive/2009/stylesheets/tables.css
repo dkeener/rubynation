@@ -1,0 +1,62 @@
+
+table {
+  margin: 0px 1em;
+  border: 2px ridge white;
+  background-color: #D3BA8E;
+  table-layout: fixed;
+}
+
+table tbody {
+  font-family: Courier, monospace;
+  font-size: 0.9em;
+}
+
+table tbody td {
+  margin: 0px;
+  padding: 0.2em 0.8em;
+}
+
+table tbody tr.odd {
+  background-color: #FFFFFF;
+}
+
+table tbody tr {
+  background-color: #EEE7DF;
+}
+
+table tbody tr.even {
+  background-color: #EEE7DF;
+}
+
+table thead th {
+  color: #FFFFFF;
+  background-color: #515151;
+  margin: 0px;
+  padding: 0.4em 0.8em;
+  text-align: center;
+}
+
+table.day {
+  width: 90%;
+}
+
+table td.topic {
+  width: 20em;
+  white-space: normal;
+}
+td.time, td.duration {
+  text-align: center;
+  width: 20%;
+  font-size: 11px;
+}
+td.duration {
+  width: 5em;
+}
+td.speaker {
+  width: 12em;
+  white-space: normal;
+}
+
+td.both_tracks {
+  text-align: center;
+}

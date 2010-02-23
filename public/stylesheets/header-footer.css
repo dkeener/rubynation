@@ -1,0 +1,61 @@
+/* Styles the header that appears at the top of each page */
+#header {
+  background-image: url("/images/conference/header.png");
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-color: #980000;
+  margin: 0;
+  padding: 0;
+  height: 115px;
+}
+
+#when {position: absolute; top: 18px;  margin: 0 0 0 700px; width: 180px; padding: 0;}
+#when h1 {font-size: 1em; padding: 0 0 0 0; color: #FFFFFF; background: none; border: none;}
+ul#menu {
+  position: absolute;
+  top: 85px;
+  width: 800px;
+  z-index: auto;
+  /* background-image: url("/images/conference/banner-mirror.gif");
+  background-repeat: no-repeat;
+  background-position: top left; */
+  background-color: transparent;
+  margin: 0 0 0 0;
+  padding: 4px 4px 4px 200px;
+  list-style-type: none;
+  text-align: right;
+}
+
+ul#menu li {
+  display: inline;
+  width: 65px;
+  border-left: 2px solid #FF9933;
+  color: #7899BB;
+  margin: 0px;
+  padding: 0px 12px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+ul#menu li:first-child {
+  border-style: none;
+}
+
+ul#menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+ul#menu li a:hover {
+  color: #7899BB;
+}
+
+#footer {
+  clear: both;
+  padding: 10px 100px 0 0;
+  margin: 0;
+  text-align: center;
+  color: #f04249;
+  font-size: 0.7em;
+  background-color: #000000;
+}

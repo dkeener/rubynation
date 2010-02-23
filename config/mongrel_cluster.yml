@@ -1,0 +1,9 @@
+--- 
+cwd: "/var/www/address221/www.rubynation.org/current"
+user: deploymeister
+group: deploymeister
+address: 127.0.0.1
+port: 9080
+environment: production
+pid_file: log/mongrel.pid
+servers: 2

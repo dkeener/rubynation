@@ -1,0 +1,35 @@
+davek:
+  id: 1
+  first_name: David
+  last_name: Keener
+  login_name: dkeener
+  email: "dkeener@keenertech.com"
+  hashed_password: dd5e90c143ab727f7d83286ace3ebe81619733f4
+  salt: 544384000.640786778811626
+
+karen:
+  id: 2
+  first_name: Karen
+  last_name: Gillison
+  login_name: kgillison
+  email: "kgillison@codesherpas.com"
+  hashed_password: dd5e90c143ab727f7d83286ace3ebe81619733f4
+  salt: 544384000.640786778811626
+  
+gray:
+  id: 3
+  first_name: Gray
+  last_name: Herter
+  login_name: gherter
+  email: "gray.herter@gmail.com"
+  hashed_password: dd5e90c143ab727f7d83286ace3ebe81619733f4
+  salt: 544384000.640786778811626  
+
+russ:
+  id: 4
+  first_name: Russ
+  last_name: Olsen
+  login_name: rolsen
+  email: "russ@russolsen.com"
+  hashed_password: dd5e90c143ab727f7d83286ace3ebe81619733f4
+  salt: 544384000.640786778811626
